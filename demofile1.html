@@ -1,6 +1,36 @@
 <html>
 <body>
+    <style>
+    .button {
+        font: bold 11px Arial;
+        text-decoration: none;
+        background-color: #EEEEEE;
+        color: #333333;
+        padding: 2px 6px 2px 6px;
+        border-top: 1px solid #CCCCCC;
+        border-right: 1px solid #333333;
+        border-bottom: 1px solid #333333;
+        border-left: 1px solid #CCCCCC;
+      }
+    </style>
+
 <h1>My Header</h1>
 <p>My paragraph.</p>
+<input type="button" value="Summer" title="See the Summer!" onclick="window.location.href='/summer.html'"></input> 
+<input type="button" value="Winter" title="See the Winter!" onclick="window.location.href='/winter.html'"></input> 
+<p></p>
+<a href="summer.html" class="button">Summer</a>
+<a href="winter.html" class="button">Winter</a>
+<p></p>
+<button onclick="window.location.href='/summer.html'">Summer</button>
+<button onclick="window.location.href='/winter.html'">Winter</button>
+<p></p>
+<form method="get" action="/summer.html">
+    <button type="submit">Summer</button>
+</form>
+<form method="get" action="/winter.html">
+    <button type="submit">Wnter</button>
+</form>
+
 </body>
 </html>
